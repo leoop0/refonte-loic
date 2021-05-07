@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Loïc Thépaut</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="assets/js/main.js"></script>
+   </head>
+   <body>
+      <!-- Wrapper -->
+      <div id="wrapper">
+         <!-- Header -->
+         <header id="header">
+            <div class="logo">
+               <span class="fas fa-music"></span>
+            </div>
+            <div class="content">
+               <div class="inner">
+                  <h1>Loïc Thépaut</h1>
+                  <p>Artiste, musicien & chanteur.</p>
+               </div>
+            </div>
+            <nav>
+               <ul>
+                  <li class="category" id="cat1" onmouseover="playSound(1)"><a href="creation.html">Créations</a></li>
+                  <li class="category" id="cat2" onmouseover="playSound(2)"><a href="music.html">Musiques</a></li>
+                  <li class="category" id="cat3" onmouseover="playSound(3)"><a href="about.html">A propos</a></li>
+                  <li class="category" id="cat4" onmouseover="playSound(4)"><a href="contact.html">Contact</a></li>
+               </ul>
+            </nav>
+         </header>
+         <div id="sound" onmouseover="hoverOn(1)" onclick="activeSound()">sound off</div>
+         <!-- Footer -->
+         <footer id="footer">
+            <p class="copyright">&copy; Loïc Thépaut | Tous droits réservés</p>
+         </footer>
+      </div>
+      <audio id="son1" preload="" >
+         <source src="https://cdn.glitch.com/5cd8193a-5ff2-498c-94d8-48b82cc51fc0%2Fnote1.mp3?v=1579787192779" type="audio/mpeg" >
+       </audio>
+       <audio id="son2" preload="">
+         <source src="https://cdn.glitch.com/5cd8193a-5ff2-498c-94d8-48b82cc51fc0%2Fnote2.mp3?v=1579787192808" type="audio/mpeg">
+       </audio>
+       <audio id="son3" preload="">
+         <source src="https://cdn.glitch.com/5cd8193a-5ff2-498c-94d8-48b82cc51fc0%2Fnote3.mp3?v=1579787191925" type="audio/mpeg">
+       </audio>
+       <audio id="son4" preload="">
+         <source src="https://cdn.glitch.com/5cd8193a-5ff2-498c-94d8-48b82cc51fc0%2Fnote4.mp3?v=1579787192966" type="audio/mpeg">
+       </audio>
+      <!-- Scripts -->
+   </body>
+</html>
